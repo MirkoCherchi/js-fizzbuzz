@@ -1,0 +1,28 @@
+.mc-li{
+   list-style: none;
+   width: 110px;
+   height: 110px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   display: flex;
+   font-size: 1.5rem;
+   background-color: gray;
+   border-radius: 10px;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+body{
+    background-color: aqua;
+}

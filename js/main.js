@@ -18,11 +18,40 @@
 // a seconda che il valore inserito sia un numero,
 // un fizz, un buzz o un fizzbuzz. Se sei a corto di idee per lo stile,
 // potresti prendere spunto dallo screenshot fornito in consegna.
-
+const lista = document.querySelector('.list-ul');
 
 for (let conta = 1; conta <= 100; conta++) {
-    if (conta % 15 === 0) console.log('FizzBuzz');
-    else if (conta % 5 === 0) console.log('Buzz');
-    else if (conta % 3 === 0) console.log('Fizz');
-    else console.log(conta);    
+    let li = document.createElement('li')
+    if (conta % 15 === 0){
+        console.log('FizzBuzz');
+        li.append('FizzBuzz');
+        lista.append(li);
+        li.classList.add('mc-li');
+        li.classList.add('yellow');
+
+    }else if (conta % 5 === 0){
+        console.log('Buzz');
+        li.append('Buzz');
+        lista.append(li);
+        li.classList.add('mc-li');
+        li.classList.add('green');
+        
+    }else if (conta % 3 === 0){
+        console.log('Fizz');
+        li.append('Fizz');
+        lista.append(li);
+        li.classList.add('mc-li');
+        li.classList.add('red');
+       
+    }else {
+        console.log(conta) ;
+        li.append(conta);
+        lista.append(li);
+        li.classList.add('mc-li');
+        
+    } 
+
 }
+
+
+
