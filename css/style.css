@@ -1,4 +1,8 @@
-.mc-li{
+body {
+    background-color: aqua;
+}
+
+ul > li{
    list-style: none;
    width: 110px;
    height: 110px;
@@ -22,8 +26,4 @@
 
 .yellow{
     background-color: yellow;
-}
-
-body{
-    background-color: aqua;
 }
